@@ -1,5 +1,5 @@
 import gallery from './gallery-items.js'
-// console.log(gallery);
+console.log(gallery);
 
 const createGalleryCards = gallery => {
 
@@ -15,7 +15,7 @@ const createGalleryCards = gallery => {
     imgRef.setAttribute('src', gallery.preview)
     imgRef.setAttribute('data-source', gallery.original)
     imgRef.setAttribute('alt', gallery.description)
-
+    imgRef.setAttribute('data-index', '???')
     containerLiRef.append(linkRef)
     linkRef.append(imgRef)
 
